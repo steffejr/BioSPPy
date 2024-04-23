@@ -1,22 +1,3 @@
-### 🎙️ Announcements
-#### Latest
-```
-🌀 New module for signal quality assessment 🌀
-With the biosppy.quality module you can now evaluate the quality of your signals!
-So far, the EDA and ECG quality are available, but more could be added soon. 
-```
-#### New features
-```
-🌀 New module for signal quality assessment (biosppy.quality)
-🫀 New module for heart rate variability (biosppy.signals.hrv)
-🎊 New module for feature extraction (biosppy.features)
-```
-
-
-# BioSPPy - Biosignal Processing in Python
-
-*A toolbox for biosignal processing written in Python.*
-
 <a href="https://biosppy.readthedocs.org/">
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="docs/logo/logo_400.png">
@@ -25,13 +6,39 @@ So far, the EDA and ECG quality are available, but more could be added soon.
 </picture>
 </a>
 
+*A toolbox for biosignal processing written in Python.*
+
+[![PyPI version](https://badgen.net/pypi/v/biosppy)](https://pypi.org/project/biosppy/)
+[![PyPI downloads](https://badgen.net/pypi/dm/biosppy/?color=blue)](https://pypi.org/project/biosppy/)
+[![License](https://badgen.net/pypi/license/biosppy?color=grey)](https://github.com/scientisst/BioSPPy/blob/main/LICENSE)
+
+[![GitHub stars](https://badgen.net/github/stars/scientisst/BioSPPy?color=yellow)]()
+[![GitHub issues](https://badgen.net/github/open-issues/scientisst/BioSPPy?color=cyan)](https://github.com/scientisst/BioSPPy/issues)
+
+
+### 🎙️ Announcements
+```
+🌀 New module for signal quality assessment 🌀
+With the biosppy.quality module you can now evaluate the quality of your signals!
+So far, the EDA and ECG quality are available, but more could be added soon. 
+```
+```
+🫀 New module for heart rate variability (biosppy.signals.hrv)
+🎊 New module for feature extraction (biosppy.features)
+```
+
+
+# BioSPPy - Biosignal Processing in Python
 The toolbox bundles together various signal processing and pattern recognition
 methods geared towards the analysis of biosignals.
 
 Highlights:
 
-- Support for various biosignals: BVP, ECG, EDA, EEG, EMG, PCG, PPG, Respiration
+- Support for various biosignals: ECG, EDA, EEG, EMG, PCG, PPG, Respiration, HRV
 - Signal analysis primitives: filtering, frequency analysis
+- Feature extraction: time, frequency, and non-linear domain
+- Signal quality assessment
+- Signal synthesizers
 - Clustering
 - Biometrics
 
@@ -86,22 +93,26 @@ This should produce a plot similar to the one below.
 ## Citing
 Please use the following if you need to cite BioSPPy:
 
-- Carreiras C, Alves AP, Lourenço A, Canento F, Silva H, Fred A, *et al.*
-  **BioSPPy - Biosignal Processing in Python**, 2015-,
-  https://github.com/PIA-Group/BioSPPy/ [Online; accessed ```<year>-<month>-<day>```].
+P. Bota, R. Silva, C. Carreiras, A. Fred, and H. P. da Silva, "BioSPPy: A Python toolbox for physiological signal processing," SoftwareX, vol. 26, pp. 101712, 2024, doi: 10.1016/j.softx.2024.101712.
 
 ```latex
-@Misc{,
-  author = {Carlos Carreiras and Ana Priscila Alves and Andr\'{e} Louren\c{c}o and Filipe Canento and Hugo Silva and Ana Fred and others},
-  title = {{BioSPPy}: Biosignal Processing in {Python}},
-  year = {2015--},
-  url = "https://github.com/PIA-Group/BioSPPy/",
-  note = {[Online; accessed <today>]}
+@article{biosppy,
+    title = {BioSPPy: A Python toolbox for physiological signal processing},
+    author = {Patrícia Bota and Rafael Silva and Carlos Carreiras and Ana Fred and Hugo Plácido {da Silva}},
+    journal = {SoftwareX},
+    volume = {26},
+    pages = {101712},
+    year = {2024},
+    issn = {2352-7110},
+    doi = {https://doi.org/10.1016/j.softx.2024.101712},
+    url = {https://www.sciencedirect.com/science/article/pii/S2352711024000839},
 }
 ```
 
-## License
+However, if you want to cite a specific version of BioSPPy, you can use Zenodo's DOI:
 
+
+## License
 BioSPPy is released under the BSD 3-clause license. See LICENSE for more details.
 
 ## Disclaimer
