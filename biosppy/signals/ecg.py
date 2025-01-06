@@ -2173,6 +2173,7 @@ def plot_artifacts(artifacts, subspaces):
     plt.tight_layout()
     plt.show()
 
+
 # função principal
 def fixpeaks(peaks, sampling_rate=1000, iterative=True, show=False):
     '''FIXPEAKS: HRV time series artifact correction.
@@ -2305,6 +2306,8 @@ def getQPositions(ecg_proc=None, show=False):
         
         Q_positions = np.array(Q_positions)
         Q_start_positions = np.array(Q_start_positions)
+        
+        
         
     return utils.ReturnTuple((Q_positions, Q_start_positions,), ("Q_positions","Q_start_positions",))
 
